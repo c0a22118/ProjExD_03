@@ -167,8 +167,8 @@ def main():
                 return
             if event.type == pg.KEYDOWN and event.key == pg.K_SPACE:
                 beam = Beam(bird)
-        font2 = pg.font.Font(None, 50)
-        text2 = font2.render(str(score), True, (255,0,0))
+        font2 = pg.font.Font(None, 300)
+        text2 = font2.render(str(score), True, (0,0,0))
 
         tmr += 1
         screen.blit(bg_img, [0, 0])
